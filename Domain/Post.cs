@@ -2,7 +2,16 @@
 
 public class Post
 {
-    public string Title { set; get; }
-    public string Body { set; get; }
-    public User Author { set; get; }
+    public string Title { get; }
+    public string Body {  get; }
+    public User Author {  get; }
+
+    public int Id { set; get; }
+
+    public Post(string title, string body, User author)
+    {
+        Title = title;
+        Body = body;
+        Author = author;
+    }
 }

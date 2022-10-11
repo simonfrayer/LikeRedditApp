@@ -16,6 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<FileContext>();
 builder.Services.AddScoped<IUserDao, UserFileDao>();
 builder.Services.AddScoped<IUserLogic, UserLogic>();
+builder.Services.AddScoped<IPostDao, PostFileDao>();
+builder.Services.AddScoped<IPostLogic, PostLogic>();
 
 var app = builder.Build();
 
@@ -25,6 +27,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(x => x
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed(origin => true) // allow any origin
+    .AllowCredentials());
 
 app.UseHttpsRedirection();
 

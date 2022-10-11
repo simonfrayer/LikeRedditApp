@@ -3,11 +3,10 @@
 public class UserCreationDto
 {
     public string Username {  get; }
-    public string Password {  get; }
+    public string? Password { set; get; }
 
-    public UserCreationDto(string username, string password)
+    public UserCreationDto(string username)
     {
         Username = username;
-        Password = password;
     }
 }

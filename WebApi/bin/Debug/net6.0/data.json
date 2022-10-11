@@ -1,0 +1,21 @@
+{
+  "Users": [
+    {
+      "Username": "Simon",
+      "Password": "tvojemama",
+      "Id": 1
+    }
+  ],
+  "Posts": [
+    {
+      "Title": "Make getAll method",
+      "Body": "Implement getAll method for post",
+      "Author": {
+        "Username": "Simon",
+        "Password": "tvojemama",
+        "Id": 1
+      },
+      "Id": 1
+    }
+  ]
+}
