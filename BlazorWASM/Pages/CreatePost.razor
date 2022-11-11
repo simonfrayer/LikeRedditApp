@@ -1,0 +1,85 @@
+﻿@page "/CreatePost"
+@attribute [Authorize]
+@using HttpClients.ClientInterfaces
+@using Domain.DTOs
+@using System.Security.Claims
+@inject IPostService postService
+@inject NavigationManager navMgr
+
+<div class="card">
+    <h3>Create Post</h3>
+        <div class="form-group field">
+            <label>Title:</label>
+            <input type="text" @bind="postTitle"/>
+        </div>
+    <div class="form-group field">
+        <label>Body:</label>
+        <input type="text" @bind="postBody"/>
+    </div>
+    <div class="button-row">
+        @if (!string.IsNullOrEmpty(msg))
+        {
+            <label style="color: red">@msg</label>
+        }
+        <button @onclick="Create" class="acceptbtn">Publish</button>
+    </div>
+    <div>
+        @testMsg
+    </div>
+</div>
+@code {
+    private string userName;
+    private string postTitle = "";
+    private string postBody = "";
+
+    private string msg = "";
+    private string testMsg = "Im in Create Post";
+    
+    //authentication state
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            AuthenticationState authState = await AuthState;
+            ClaimsPrincipal user = authState.User;
+            userName = user.Identity!.Name!;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+    private async Task Create()
+    {
+        msg = "";
+        if (string.IsNullOrEmpty(postTitle))
+        {
+            msg = "Title cannot be empty!";
+            return;
+        }
+        if (string.IsNullOrEmpty(postBody))
+        {
+            msg = "Body cannot be empty!";
+            return;
+        }
+
+        try
+        {
+
+            string author = userName;
+            await postService.CreateAsync(author, postTitle, postBody);
+            navMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+}

@@ -22,20 +22,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/CreateUser.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVXNlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/ViewPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Shared/SurveyPrompt.razor]
@@ -45,6 +33,30 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/Componenets/LoginButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW5ldHNcTG9naW5CdXR0b25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-vljv0axgwj
+
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/CreatePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ceegisofnu
+
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ge7fcwz0nr
+
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xm4hp2nt19
+
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/RegisterUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-aleo5bhpi6
+
+[C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Pages/ViewUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VzZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-b8bn5keb44
 
 [C:/Users/Simon/Documents/Danmark/VIA/3_semester/IT-DNP1Y-A22/1_Lesson_C\#_Basics/LikeRedditApp/BlazorWASM/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

@@ -2,6 +2,7 @@
 using Application.LogicInterfaces;
 using Domain;
 using Domain.DTOs;
+using Domain.Model;
 
 namespace Application.Logic;
 

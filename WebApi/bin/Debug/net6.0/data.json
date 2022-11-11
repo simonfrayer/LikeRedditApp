@@ -3,7 +3,50 @@
     {
       "Username": "Simon",
       "Password": "tvojemama",
-      "Id": 1
+      "Id": 1,
+      "Role": null
+    },
+    {
+      "Username": "Tomas",
+      "Password": "",
+      "Id": 2,
+      "Role": null
+    },
+    {
+      "Username": "Anez",
+      "Password": "string",
+      "Id": 3,
+      "Role": null
+    },
+    {
+      "Username": "Debil",
+      "Password": null,
+      "Id": 4,
+      "Role": null
+    },
+    {
+      "Username": "Typek",
+      "Password": "12345",
+      "Id": 5,
+      "Role": null
+    },
+    {
+      "Username": "testRegister",
+      "Password": "12345678",
+      "Id": 6,
+      "Role": null
+    },
+    {
+      "Username": "testForPost",
+      "Password": "12345678",
+      "Id": 7,
+      "Role": null
+    },
+    {
+      "Username": "testForPost2",
+      "Password": "12345678",
+      "Id": 8,
+      "Role": null
     }
   ],
   "Posts": [
@@ -13,9 +56,76 @@
       "Author": {
         "Username": "Simon",
         "Password": "tvojemama",
-        "Id": 1
+        "Id": 1,
+        "Role": null
       },
       "Id": 1
+    },
+    {
+      "Title": "Make View Post Page",
+      "Body": "Create a new Page to display post details when user clicks on a post",
+      "Author": {
+        "Username": "Simon",
+        "Password": "tvojemama",
+        "Id": 1,
+        "Role": null
+      },
+      "Id": 2
+    },
+    {
+      "Title": "Title",
+      "Body": "body",
+      "Author": {
+        "Username": "Simon",
+        "Password": "tvojemama",
+        "Id": 1,
+        "Role": null
+      },
+      "Id": 3
+    },
+    {
+      "Title": "string",
+      "Body": "string",
+      "Author": {
+        "Username": "Anez",
+        "Password": "string",
+        "Id": 3,
+        "Role": null
+      },
+      "Id": 4
+    },
+    {
+      "Title": "TestForPost",
+      "Body": "API endpoint is anonymous",
+      "Author": {
+        "Username": "Typek",
+        "Password": "12345",
+        "Id": 5,
+        "Role": null
+      },
+      "Id": 5
+    },
+    {
+      "Title": "TespoForPostAuth",
+      "Body": "Authorized endpoint",
+      "Author": {
+        "Username": "Debil",
+        "Password": null,
+        "Id": 4,
+        "Role": null
+      },
+      "Id": 6
+    },
+    {
+      "Title": "string",
+      "Body": "string",
+      "Author": {
+        "Username": "Anez",
+        "Password": "string",
+        "Id": 3,
+        "Role": null
+      },
+      "Id": 7
     }
   ]
 }

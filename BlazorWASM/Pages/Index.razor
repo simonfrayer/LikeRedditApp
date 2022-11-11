@@ -1,9 +1,62 @@
 ﻿@page "/"
+@using Domain
+@using Domain.Model
+@using HttpClients.ClientInterfaces
+@inject IPostService postService
+@inject NavigationManager navMgr
 
-<PageTitle>Index</PageTitle>
+<h3>Todos</h3>
 
-<h1>Hello, world!</h1>
+@if (posts == null)
+{
+}
+else if (!posts.Any())
+{
+    <p>No Todos to display</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Posts</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in posts)
+        {
+            <tr>
+                <td @onclick="() => ViewPost(item.Id)">@item.Title by @item.Author.Username</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red">@msg</label>
+}
 
-Welcome to your new app.
+@code {
+    private IEnumerable<Post>? posts;
+    private string msg = "";
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            posts = await postService.GetAsync(null, null);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+    private void ViewPost(int postId)
+    {
+        navMgr.NavigateTo($"/viewpost/{postId}");
+    }
+
+}

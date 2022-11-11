@@ -1,6 +1,7 @@
 ﻿using Application.DaoInterfaces;
 using Domain;
 using System.Linq;
+using Domain.Model;
 
 namespace FileData.DAOs;
 

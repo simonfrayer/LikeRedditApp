@@ -1,6 +1,8 @@
 ﻿using Application.LogicInterfaces;
 using Domain;
 using Domain.DTOs;
+using Domain.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers;
@@ -45,10 +47,9 @@ public class PostsController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-
-    [Route("/id/")]
-    [HttpGet]
-    public async Task<ActionResult<Post>> GetById([FromQuery] int id)
+    
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<Post>> GetById([FromRoute] int id)
     {
         try
         {

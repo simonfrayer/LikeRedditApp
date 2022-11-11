@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "JAomKTqClkfK5GBIz8J/m4PlzmmJL2GTiB3xnv62LZqXEu3hm7uZXYSrVi2pwuPRUGTUlvUGssL6cxLu54IuKg==",
+  "dgSpecHash": "4hKo5pIlicigZ5rshtK6+YJiDD0PeE5sP3xtgAZCBFEk4Ae2LuPwm4RQi1A5uHZktAQGGaR+KPNlXUlyWFNeMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\FileData.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Simon\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
+    "C:\\Users\\Simon\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.10\\microsoft.aspnetcore.metadata.6.0.10.nupkg.sha512",
+    "C:\\Users\\Simon\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Simon\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.2\\microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
+    "C:\\Users\\Simon\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Simon\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Simon\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,7 @@
+﻿td{
+    cursor: pointer;
+}
+
+td:hover{
+    font-weight: bold;
+}

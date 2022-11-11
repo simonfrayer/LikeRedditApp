@@ -1,0 +1,59 @@
+﻿@page "/RegisterUser"
+@using Domain.DTOs
+@using HttpClients.ClientInterfaces
+@inject IUserService userService;
+@inject NavigationManager navMgr
+
+<div class="card">
+    <div class="field">
+        <h3>Create User</h3>
+    </div>
+    <div class="field">
+        <label>User name:</label>
+        <input type="text" @bind="username" @bind:event="oninput"/>
+    </div>
+    <div class="field">
+        <label>Password:</label>
+        <input type="text" @bind="password" @bind:event="oninput"/>
+    </div>
+    <div class="field">
+        @if (!string.IsNullOrEmpty(resultMsg))
+        {
+            <label style="color: @color">@resultMsg</label>
+        }
+    </div>
+    <div class="field">
+        <div class="button-row">
+            <button @onclick="Create" disabled="@(string.IsNullOrEmpty(username))" class="acceptbtn">Register</button>
+        </div>
+    </div>
+
+</div>
+
+@code {
+    private string username = "";
+    private string password = "";
+    private string resultMsg = "";
+    private string color = "";
+    
+    private async Task Create()
+    {
+        resultMsg = "";
+
+        try
+        {
+            await userService.Create(username, password);
+            username = "";
+            password = "";
+            resultMsg = "User successfully created";
+            color = "green";
+            navMgr.NavigateTo("/Login");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+            color = "red";
+        }
+    }
+}

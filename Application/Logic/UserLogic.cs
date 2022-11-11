@@ -2,6 +2,7 @@
 using Application.LogicInterfaces;
 using Domain;
 using Domain.DTOs;
+using Domain.Model;
 
 namespace Application.Logic;
 
@@ -33,6 +34,21 @@ public class UserLogic : IUserLogic
 
         return created;
     }
+    
+    public Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters)
+    {
+        return userDao.GetAsync(searchParameters);
+    }
+
+    public Task<User> ValidateUser(string username, string password)
+    {
+        UserLoginDto dto = new UserLoginDto()
+        {
+            Username = username,
+            Password = password
+        };
+        return userDao.ValidateUser(dto);
+    }
 
     private static void ValidateData(UserCreationDto userToCreate)
     {
@@ -46,7 +62,6 @@ public class UserLogic : IUserLogic
             throw new Exception("Username must be less than 16 characters!");
 
         if (password.Length < 8)
-            throw new Exception("Password must be at least 8 characters!");
-
+            throw new Exception("Password must be at least 8 characters");
     }
 }
