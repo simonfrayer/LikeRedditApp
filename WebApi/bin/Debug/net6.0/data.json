@@ -47,6 +47,12 @@
       "Password": "12345678",
       "Id": 8,
       "Role": null
+    },
+    {
+      "Username": "TestUser",
+      "Password": "12345678",
+      "Id": 9,
+      "Role": null
     }
   ],
   "Posts": [
@@ -126,6 +132,28 @@
         "Role": null
       },
       "Id": 7
+    },
+    {
+      "Title": "New post",
+      "Body": "New post",
+      "Author": {
+        "Username": "Anez",
+        "Password": "string",
+        "Id": 3,
+        "Role": null
+      },
+      "Id": 8
+    },
+    {
+      "Title": "TestPost",
+      "Body": "This Is a test past",
+      "Author": {
+        "Username": "TestUser",
+        "Password": "12345678",
+        "Id": 9,
+        "Role": null
+      },
+      "Id": 9
     }
   ]
 }

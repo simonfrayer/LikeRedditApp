@@ -2,11 +2,12 @@
 
 public class Post
 {
-    public string Title { get; }
-    public string Body {  get; }
-    public User Author {  get; }
-
     public int Id { set; get; }
+    public string Title { get; private set; }
+    public string Body {  get; private set; }
+    public User Author {  get; private set; }
+
+    
 
     public Post(string title, string body, User author)
     {
@@ -14,4 +15,6 @@ public class Post
         Body = body;
         Author = author;
     }
-}
+
+    private Post (){}
+    }

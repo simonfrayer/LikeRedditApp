@@ -209,14 +209,14 @@
         }
       }
     },
-    "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\FileData.csproj": {
+    "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\EfcDataAccess\\EfcDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\FileData.csproj",
-        "projectName": "FileData",
-        "projectPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\FileData.csproj",
+        "projectUniqueName": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\EfcDataAccess\\EfcDataAccess.csproj",
+        "projectName": "EfcDataAccess",
+        "projectPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\EfcDataAccess\\EfcDataAccess.csproj",
         "packagesPath": "C:\\Users\\Simon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\obj\\",
+        "outputPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\EfcDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -248,6 +248,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -363,8 +379,8 @@
               "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\BlazorWASM\\BlazorWASM.csproj": {
                 "projectPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\BlazorWASM\\BlazorWASM.csproj"
               },
-              "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\FileData.csproj": {
-                "projectPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\FileData\\FileData.csproj"
+              "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\EfcDataAccess\\EfcDataAccess.csproj": {
+                "projectPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\EfcDataAccess\\EfcDataAccess.csproj"
               },
               "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\HttpClients\\HttpClients.csproj": {
                 "projectPath": "C:\\Users\\Simon\\Documents\\Danmark\\VIA\\3_semester\\IT-DNP1Y-A22\\1_Lesson_C#_Basics\\LikeRedditApp\\HttpClients\\HttpClients.csproj"

@@ -31,14 +31,21 @@ public class PostLogic : IPostLogic
         return created;
     }
 
-    public Task<List<Post>> GetAllAsync()
+    public async Task<List<Post>> GetAllAsync()
     {
-        return postDao.GetAllAsync();
+        return await postDao.GetAllAsync();
     }
 
-    public Task<Post> GetById(int id)
+    public async Task<Post> GetById(int id)
     {
-        return postDao.GetById(id);
+        Post? result = await postDao.GetById(id);
+
+        if (result == null)
+        {
+            throw new Exception("Post not found");
+        }
+        
+        return result;
     }
 
     private void ValidatePost(PostCreationDto dto)
