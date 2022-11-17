@@ -40,14 +40,22 @@ public class UserLogic : IUserLogic
         return userDao.GetAsync(searchParameters);
     }
 
-    public Task<User> ValidateUser(string username, string password)
+    public async Task<User> ValidateUser(string username, string password)
     {
         UserLoginDto dto = new UserLoginDto()
         {
             Username = username,
             Password = password
         };
-        return userDao.ValidateUser(dto);
+
+        User? existing = await userDao.ValidateUser(dto);
+        
+        if (existing == null)
+        {
+            throw new Exception("User does not exist");
+        }
+        
+        return existing;
     }
 
     private static void ValidateData(UserCreationDto userToCreate)

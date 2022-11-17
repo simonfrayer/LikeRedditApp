@@ -47,8 +47,10 @@ public class UserEfcDao : IUserDao
         return result;
     }
 
-    public Task<User> ValidateUser(UserLoginDto dto)
+    public async Task<User> ValidateUser(UserLoginDto dto)
     {
-        throw new NotImplementedException();
+        User? existing = await
+            _context.Users.FirstOrDefaultAsync(u => u.Username.Equals(dto.Username) && u.Password.Equals(dto.Password));
+        return existing;
     }
 }
